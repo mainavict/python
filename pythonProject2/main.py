@@ -1,16 +1,18 @@
-# This is a sample Python script.
+import webbrowser
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+website = input('search website: ')
 
+if website == 'google':
+    search = input('search: ')
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+    webbrowser.open('https://www.google.com/search?q=' + search)
 
+elif website == 'youtube':
+    search = input('search: ')
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+    webbrowser.open('https://www.youtube.com/results?search_query=' +search)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+elif website == 'edge':
+    search = input('search: ')
+
+    webbrowser.open('https://www.bing.com/search?pglt=41&q=' +search)
